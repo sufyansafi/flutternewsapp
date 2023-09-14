@@ -10,7 +10,8 @@ class NewsRepositery {
     // const url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=$apiKey';
 
     String url =
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=71e3c4580fb4422fb138e63093be3c21";
+        "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=71e3c4580fb4422fb138e63093be3c21";
+
     final response = await http.get(Uri.parse(url));
     if (kDebugMode) {
       print(response.body);
